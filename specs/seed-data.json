@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "source": "frontend/app.js (tasks array)",
+    "stateOrder": ["code_ready", "recorded", "editing", "uploaded", "published"],
+    "roles": ["Admin", "Content", "Editor", "Uploader"],
+    "validated": "All records conform to STATES order and ROLE_CONFIG.",
+    "nextId": 6
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Introduction to Spring Boot",
+      "assignedRole": "Content",
+      "state": "code_ready",
+      "description": "Cover project setup, auto-configuration, and starter dependencies.",
+      "createdAt": "2026-05-01"
+    },
+    {
+      "id": 2,
+      "title": "REST API with Spring MVC",
+      "assignedRole": "Editor",
+      "state": "recorded",
+      "description": "Build a full CRUD REST API using @RestController and ResponseEntity.",
+      "createdAt": "2026-05-03"
+    },
+    {
+      "id": 3,
+      "title": "Spring Security — JWT Auth",
+      "assignedRole": "Editor",
+      "state": "editing",
+      "description": "Implement JWT-based authentication and role-based authorization.",
+      "createdAt": "2026-05-05"
+    },
+    {
+      "id": 4,
+      "title": "Hibernate & JPA Deep Dive",
+      "assignedRole": "Uploader",
+      "state": "uploaded",
+      "description": "Entity mapping, relationships, JPQL queries, and transaction management.",
+      "createdAt": "2026-05-08"
+    },
+    {
+      "id": 5,
+      "title": "Microservices with Spring Cloud",
+      "assignedRole": "Admin",
+      "state": "published",
+      "description": "Service discovery, API gateway, config server, and circuit breaker patterns.",
+      "createdAt": "2026-05-10"
+    }
+  ]
+}
