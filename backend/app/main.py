@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.v1 import tasks
 from app.core.config import settings
 
 app = FastAPI(title="Telusko Workflow Engine API")
@@ -12,6 +13,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+app.include_router(tasks.router)
 
 
 @app.get("/health")
